@@ -59,7 +59,7 @@ jobs:
         run: |
           docker buildx build \
             --build-arg BUILD_SHA=${{ github.sha }} \
-            --tag ghcr.io/${{ github.repository }}/scoreboard-api:${{ github.sha }} \
-            --tag ghcr.io/${{ github.repository }}/scoreboard-api:latest \
+            --tag ghcr.io/dharap0811/scoreboard-dhara/scoreboard-api:${{ github.sha }} \
+            --tag ghcr.io/dharap0811/scoreboard-dhara/scoreboard-api:latest \
             --push \
             scoreboard-api
