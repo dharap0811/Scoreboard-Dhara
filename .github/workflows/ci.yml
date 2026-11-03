@@ -58,7 +58,7 @@ jobs:
       - name: Build and push build \
         run: |
           docker buildx build \
-            --build-ar BUILD_SHA=${{ github.sha }} \
+            --build-arg BUILD_SHA=${{ github.sha }} \
             --tag ghcr.io/${{ github.repository }}/scoreboard-api:${{ github.sha }} \
             --tag ghcr.io/${{ github.repository }}/scoreboard-api:latest \
             --push \
