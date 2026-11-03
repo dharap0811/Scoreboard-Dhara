@@ -12,8 +12,11 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v7
 
-      - name: Look around the runner
+      - name: Install Python dependencies
         run: |
-          echo "Hello from a fresh runner!"
-          ls scoreboard-api
-          python3 --version
+          python3 -m pip install --upgrade pip
+          pip install -r scoreboard-api/requirements.txt
+
+      - name: Install development dependencies
+        run: |
+          pip install -r scoreboard-api/requirements-dev.txt
