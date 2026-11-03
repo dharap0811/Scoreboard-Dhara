@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+HEAD
+HEAD
 # Windy City Scoreboard
 
 The IT 390 class app: a small API about Chicago's pro teams. This is only the starting code. In class we turn it into a repo, a container, a pipeline, and a pod, one step at a time.
@@ -34,6 +35,9 @@ Then open http://localhost:8000 or http://localhost:8000/docs.
 |---|---|---|
 | `FAVORITE_TEAM` | `bears` | One of `bears`, `bulls`, `cubs`, `white-sox`, `blackhawks`, `sky`, `fire`. Anything else stops the app at startup, on purpose. |
 | `BUILD_SHA` | `local-dev` | The commit the image was built from. The pipeline sets it. |
-=======
+
 # Scoreboard-Dhara
->>>>>>> f718c4ec82aa312a5142f8486465cffe55712982
+f718c4ec82aa312a5142f8486465cffe55712982
+
+
+ 4927382796057c7e7168c34b667f30ebfd74cbef
